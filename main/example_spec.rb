@@ -24,6 +24,18 @@ describe Example do
 
         end
 
+        it '.Return false If String Is InValid And Joint' do
+
+            str_three, str_four = "Practiceperfect.", "perfectPractice"
+            dict_three = ["practice", "perfect"]
+            valid_str_three = Example.valid_string(str_three, dict_three)
+            valid_str_four = Example.valid_string(str_four, dict_three)
+
+            expect(valid_str_three).to  eq(true)
+            expect(valid_str_four).to  eq(true)
+
+        end
+
     end 
 
 end 
