@@ -2,7 +2,7 @@
 
 class Example
 
-    def self.valid_string(dictionary, str)
+    def self.valid_string(str, dictionary)
 
         stack      = []
         dictionary = dictionary.map { |dict| dict = dict.downcase }
