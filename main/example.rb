@@ -17,7 +17,7 @@ class Example
             stack.push curr_str if  dictionary.include?(curr_str) && !stack.include?(curr_str)
         end
 
-        return stack.count == dictionary.count
+        stack.count == dictionary.count
     end
 
 end
