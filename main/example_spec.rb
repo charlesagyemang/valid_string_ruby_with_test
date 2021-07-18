@@ -36,6 +36,16 @@ describe Example do
 
         end
 
+        it '.Return correct boolen even if string mixed' do
+
+            str_5 =  "makesperfectxsense"
+            dict_5 = ["makes", "perfect", "sense"]
+            valid_str_5 = Example.valid_string(str_5, dict_5)
+
+            expect(valid_str_5).to  eq(false)
+
+        end
+
     end 
 
 end 
